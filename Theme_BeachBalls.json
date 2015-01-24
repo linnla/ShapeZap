@@ -1,0 +1,485 @@
+{
+    "themeName": "Theme_BeachBalls",
+    "locked": "NO",
+    "themeImage": "Theme_BeachBalls",
+    "hitSound": "WineGlassToast1.mp3",
+    "missSound": "",
+    "spriteBodyType": "circle",
+    "environmentalScenarios": [
+                               {
+                               "environmentScenarioName": "ZeroGravity",
+                               "gravity_dx": "1.11",
+                               "gravity_dy": "0.00",
+                               "borderBodyType": "Circle",
+                               "friction": "0",
+                               "restitution": "1",
+                               "linearDamping": "0",
+                               "affectedByGravity": "1",
+                               "dynamic": "1",
+                               "allowsRotation": "1"
+                               }
+                               ],
+    "stages": [
+               {
+               "stageNumber": 1,
+               "backgroundImages": [
+                                    "bg_black",
+                                    "bg_green",
+                                    "bg_grey"
+                                    ],
+               "spriteImages": [
+                                "ball_yellow_blue",
+                                "ball_purple_blue",
+                                "ball_white_blue",
+                                "ball_blue_red"
+                                ]
+               },
+               {
+               "stageNumber": 2,
+               "backgroundImages": [
+                                    "bg_black",
+                                    "bg_green",
+                                    "bg_grey"
+                                    ],
+               "spriteImages": [
+                                "ball_yellow_blue",
+                                "ball_purple_blue",
+                                "ball_white_blue",
+                                "ball_blue_red"
+                                ]
+               },
+               {
+               "stageNumber": 3,
+               "backgroundImages": [
+                                    "bg_black",
+                                    "bg_green",
+                                    "bg_grey"
+                                    ],
+               "spriteImages": [
+                                "ball_yellow_blue",
+                                "ball_purple_blue",
+                                "ball_orange_purple_green",
+                                "ball_red_yellow_green"
+                                ]
+               },
+               {
+               "stageNumber": 4,
+               "backgroundImages": [
+                                    "bg_black",
+                                    "bg_green",
+                                    "bg_grey"
+                                    ],
+               "spriteImages": [
+                                "ball_yellow_blue",
+                                "ball_purple_blue",
+                                "ball_orange_purple_green",
+                                "ball_red_yellow_green"
+                                ]
+               },
+               {
+               "stageNumber": 5,
+               "backgroundImages": [
+                                    "bg_black",
+                                    "bg_green",
+                                    "bg_grey"
+                                    ],
+               "spriteImages": [
+                                "ball_blue_red",
+                                "ball_white_blue",
+                                "ball_orange_purple_green",
+                                "ball_red_yellow_blue"
+                                ]
+               },
+               {
+               "stageNumber": 6,
+               "backgroundImages": [
+                                    "bg_blue",
+                                    "bg_purple",
+                                    "bg_orange",
+                                    "bg_red",
+                                    "bg_yellow"
+                                    ],
+               "spriteImages": [
+                                "ball_blue_red",
+                                "ball_white_blue",
+                                "ball_orange_purple_green",
+                                "ball_red_yellow_blue"
+                                ]
+               },
+               {
+               "stageNumber": 7,
+               "backgroundImages": [
+                                    "bg_blue",
+                                    "bg_purple",
+                                    "bg_orange",
+                                    "bg_red",
+                                    "bg_yellow"
+                                    ],
+               "spriteImages": [
+                                "ball_orange_purple_green",
+                                "ball_orange_purple_blue",
+                                "ball_red_yellow_blue",
+                                "ball_red_yellow_green"
+                                ]
+               },
+               {
+               "stageNumber": 8,
+               "backgroundImages": [
+                                    "bg_blue",
+                                    "bg_purple",
+                                    "bg_orange",
+                                    "bg_red",
+                                    "bg_yellow"
+                                    ],
+               "spriteImages": [
+                                "ball_orange_purple_green",
+                                "ball_orange_purple_blue",
+                                "ball_red_yellow_blue",
+                                "ball_red_yellow_green"
+                                ]
+               },
+               {
+               "stageNumber": 9,
+               "backgroundImages": [
+                                    "bg_blue",
+                                    "bg_purple",
+                                    "bg_orange",
+                                    "bg_red",
+                                    "bg_yellow"
+                                    ],
+               "spriteImages": [
+                                "ball_purple_blue",
+                                "ball_orange_purple_blue",
+                                "ball_orange_purple_green",
+                                "ball_orange_purple"
+                                ]
+               },
+               {
+               "stageNumber": 10,
+               "backgroundImages": [
+                                    "bg_blue",
+                                    "bg_purple",
+                                    "bg_orange",
+                                    "bg_red",
+                                    "bg_yellow"
+                                    ],
+               "spriteImages": [
+                                "ball_yellow_blue",
+                                "ball_blue_red",
+                                "ball_red_yellow_blue",
+                                "ball_red_yellow_green"
+                                ]
+               },
+               {
+               "stageNumber": 11,
+               "backgroundImages": [
+                                    "bg_blue",
+                                    "bg_purple",
+                                    "bg_orange",
+                                    "bg_red",
+                                    "bg_yellow"
+                                    ],
+               "spriteImages": [
+                                "ball_purple_blue",
+                                "ball_orange_purple_blue",
+                                "ball_orange_purple_green",
+                                "ball_orange_purple"
+                                ]
+               },
+               {
+               "stageNumber": 12,
+               "backgroundImages": [
+                                    "bg_blue",
+                                    "bg_purple",
+                                    "bg_orange",
+                                    "bg_red",
+                                    "bg_yellow"
+                                    ],
+               "spriteImages": [
+                                "ball_yellow_blue",
+                                "ball_blue_red",
+                                "ball_red_yellow_blue",
+                                "ball_red_yellow_green"
+                                ]
+               },
+               {
+               "stageNumber": 13,
+               "backgroundImages": [
+                                    "bg_orange_purple_01",
+                                    "bg_orange_purple_02",
+                                    "bg_yellow_orange_01",
+                                    "bg_yellow_orange_02"
+                                    ],
+               "spriteImages": [
+                                "ball_orange_purple",
+                                "ball_purple_orange_orange",
+                                "ball_orange_purple_purple",
+                                "ball_8_orange_purple"
+                                ]
+               },
+               {
+               "stageNumber": 14,
+               "backgroundImages": [
+                                    "bg_orange_purple_01",
+                                    "bg_orange_purple_02",
+                                    "bg_yellow_orange_01",
+                                    "bg_yellow_orange_02"
+                                    ],
+               "spriteImages": [
+                                "ball_yellow_red",
+                                "ball_yellow_red_red",
+                                "ball_red_yellow_yellow",
+                                "ball_8_yellow_red"
+                                ]
+               },
+               {
+               "stageNumber": 15,
+               "backgroundImages": [
+                                    "bg_orange_purple_01",
+                                    "bg_orange_purple_02",
+                                    "bg_yellow_orange_01",
+                                    "bg_yellow_orange_02"
+                                    ],
+               "spriteImages": [
+                                "ball_orange_purple",
+                                "ball_purple_orange_orange",
+                                "ball_orange_purple_purple",
+                                "ball_8_orange_purple"
+                                ]
+               },
+               {
+               "stageNumber": 16,
+               "backgroundImages": [
+                                    "bg_orange_purple_01",
+                                    "bg_orange_purple_02",
+                                    "bg_yellow_orange_01",
+                                    "bg_yellow_orange_02"
+                                    ],
+               "spriteImages": [
+                                "ball_yellow_red",
+                                "ball_yellow_red_red",
+                                "ball_8_yellow_red",
+                                "ball_8_yellow_yellow_red_red"
+                                ]
+               },
+               {
+               "stageNumber": 17,
+               "backgroundImages": [
+                                    "bg_orange_purple_01",
+                                    "bg_orange_purple_02",
+                                    "bg_yellow_orange_01",
+                                    "bg_yellow_orange_02"
+                                    ],
+               "spriteImages": [
+                                "ball_orange_purple",
+                                "ball_purple_orange_orange",
+                                "ball_orange_purple_purple",
+                                "ball_8_orange_orange_purple_purple"
+                                ]
+               },
+               {
+               "stageNumber": 18,
+               "backgroundImages": [
+                                    "bg_orange_purple_01",
+                                    "bg_orange_purple_02",
+                                    "bg_yellow_orange_01",
+                                    "bg_yellow_orange_02"
+                                    ],
+               "spriteImages": [
+                                "ball_yellow_red",
+                                "ball_yellow_red_red",
+                                "ball_red_yellow_yellow",
+                                "ball_8_yellow_yellow_red_red"
+                                ]
+               },
+               {
+               "stageNumber": 19,
+               "backgroundImages": [
+                                    "bg_orange_purple_01",
+                                    "bg_orange_purple_02",
+                                    "bg_yellow_orange_01",
+                                    "bg_yellow_orange_02"
+                                    ],
+               "spriteImages": [
+                                "ball_purple_orange_orange",
+                                "ball_orange_purple_purple",
+                                "ball_8_purple_orange_orange",
+                                "ball_8_orange_orange_purple_purple"
+                                ]
+               },
+               {
+               "stageNumber": 20,
+               "backgroundImages": [
+                                    "bg_checkered_red_yellow"
+                                    ],
+               "spriteImages": [
+                                "ball_orange_purple",
+                                "ball_purple_orange_orange",
+                                "ball_orange_purple_purple",
+                                "ball_8_orange_purple"
+                                ]
+               },
+               {
+               "stageNumber": 21,
+               "backgroundImages": [
+                                    "bg_checkered_red_yellow"
+                                    ],
+               "spriteImages": [
+                                "ball_orange_purple",
+                                "ball_purple_orange_orange",
+                                "ball_orange_purple_purple",
+                                "ball_8_orange_purple"
+                                ]
+               },
+               {
+               "stageNumber": 22,
+               "backgroundImages": [
+                                    "bg_checkered_orange_purple"
+                                    ],
+               "spriteImages": [
+                                "ball_yellow_red",
+                                "ball_yellow_red_red",
+                                "ball_red_yellow_yellow",
+                                "ball_8_yellow_red"
+                                ]
+               },
+               {
+               "stageNumber": 23,
+               "backgroundImages": [
+                                    "bg_checkered_orange_purple"
+                                    ],
+               "spriteImages": [
+                                "ball_yellow_red",
+                                "ball_yellow_red_red",
+                                "ball_8_yellow_red",
+                                "ball_8_yellow_yellow_red_red"
+                                ]
+               },
+               {
+               "stageNumber": 24,
+               "backgroundImages": [
+                                    "bg_checkered_red_yellow"
+                                    ],
+               "spriteImages": [
+                                "ball_orange_purple",
+                                "ball_purple_orange_orange",
+                                "ball_orange_purple_purple",
+                                "ball_8_orange_orange_purple_purple"
+                                ]
+               },
+               {
+               "stageNumber": 25,
+               "backgroundImages": [
+                                    "bg_checkered_red_yellow"
+                                    ],
+               "spriteImages": [
+                                "ball_yellow_red",
+                                "ball_yellow_red_red",
+                                "ball_red_yellow_yellow",
+                                "ball_8_yellow_yellow_red_red"
+                                ]
+               },
+               {
+               "stageNumber": 26,
+               "backgroundImages": [
+                                    "bg_orange_purple_01",
+                                    "bg_orange_purple_02",
+                                    "bg_yellow_orange_01",
+                                    "bg_yellow_orange_02"
+                                    ],
+               "spriteImages": [
+                                "ball_purple_orange_orange",
+                                "ball_orange_purple_purple",
+                                "ball_8_purple_orange_orange",
+                                "ball_8_orange_orange_purple_purple"
+                                ]
+               },
+               {
+               "stageNumber": 27,
+               "backgroundImages": [
+                                    "bg_checkered_red_yellow"
+                                    ],
+               "spriteImages": [
+                                "ball_orange_purple",
+                                "ball_purple_orange_orange",
+                                "ball_orange_purple_purple",
+                                "ball_8_orange_purple"
+                                ]
+               },
+               {
+               "stageNumber": 28,
+               "backgroundImages": [
+                                    "bg_checkered_red_yellow"
+                                    ],
+               "spriteImages": [
+                                "ball_yellow_red",
+                                "ball_yellow_red_red",
+                                "ball_red_yellow_yellow",
+                                "ball_8_yellow_red"
+                                ]
+               },
+               {
+               "stageNumber": 29,
+               "backgroundImages": [
+                                    "bg_checkered_orange_purple"
+                                    ],
+               "spriteImages": [
+                                "ball_orange_purple",
+                                "ball_purple_orange_orange",
+                                "ball_orange_purple_purple",
+                                "ball_8_orange_purple"
+                                ]
+               },
+               {
+               "stageNumber": 30,
+               "backgroundImages": [
+                                    "bg_checkered_orange_purple"
+                                    ],
+               "spriteImages": [
+                                "ball_yellow_red",
+                                "ball_yellow_red_red",
+                                "ball_8_yellow_red",
+                                "ball_8_yellow_yellow_red_red"
+                                ]
+               },
+               {
+               "stageNumber": 31,
+               "backgroundImages": [
+                                    "bg_checkered_red_yellow"
+                                    ],
+               "spriteImages": [
+                                "ball_orange_purple",
+                                "ball_purple_orange_orange",
+                                "ball_orange_purple_purple",
+                                "ball_8_orange_orange_purple_purple"
+                                ]
+               },
+               {
+               "stageNumber": 32,
+               "backgroundImages": [
+                                    "bg_checkered_red_yellow"
+                                    ],
+               "spriteImages": [
+                                "ball_yellow_red",
+                                "ball_yellow_red_red",
+                                "ball_red_yellow_yellow",
+                                "ball_8_yellow_yellow_red_red"
+                                ]
+               },
+               {
+               "stageNumber": 33,
+               "backgroundImages": [
+                                    "bg_orange_purple_01",
+                                    "bg_orange_purple_02",
+                                    "bg_yellow_orange_01",
+                                    "bg_yellow_orange_02"
+                                    ],
+               "spriteImages": [
+                                "ball_purple_orange_orange",
+                                "ball_orange_purple_purple",
+                                "ball_8_purple_orange_orange",
+                                "ball_8_orange_orange_purple_purple"
+                                ]
+               }
+               ]
+}

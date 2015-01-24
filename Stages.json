@@ -1,0 +1,268 @@
+{
+    "stages": [
+               {
+               "stageNumber": "1",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "0",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "2",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "0",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "3",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "0",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "4",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "1",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "5",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "0",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "6",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "1",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "7",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "0",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "8",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "0",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "9",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "0",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "10",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "1",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "11",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "0",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "12",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "1",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "13",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "0",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "14",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "0",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "15",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "0",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "16",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "0",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "17",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "1",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "18",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "1",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "19",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "1",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "20",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "0",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "21",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "0",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "22",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "0",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "23",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "0",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "24",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "1",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "25",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "1",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "26",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "1",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "27",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "0",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "28",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "0",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "29",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "0",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "30",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "0",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "31",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "1",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "32",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "1",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               },
+               {
+               "stageNumber": "33",
+               "speed": "1.2",
+               "size": ".90",
+               "spin": "1",
+               "winsRequired": "1",
+               "totalGameSprites": "100"
+               }
+               ]
+}

@@ -1,0 +1,478 @@
+{
+    "themeName": "Theme_Circles",
+    "locked": "NO",
+    "themeImage": "Theme_Circles",
+    "hitSound": "WineGlassToast1.mp3",
+    "missSound": "",
+    "spriteBodyType": "circle",
+    "environmentalScenarios": [
+                               {
+                               "environmentScenarioName": "ZeroGravity",
+                               "gravity_dx": "1.11",
+                               "gravity_dy": "0.00",
+                               "borderBodyType": "Circle",
+                               "friction": "0",
+                               "restitution": "1",
+                               "linearDamping": "0",
+                               "affectedByGravity": "1",
+                               "dynamic": "1",
+                               "allowsRotation": "1"
+                               }
+                               ],
+    "stages": [
+               {
+               "stageNumber": 1,
+               "backgroundImages": [
+                                    "bg_black",
+                                    "bg_green",
+                                    "bg_grey"
+                                    ],
+               "spriteImages": [
+                                "circle_orange",
+                                "circle_red",
+                                "circle_white",
+                                "circle_purple",
+                                "circle_yellow"
+                                ]
+               },
+               {
+               "stageNumber": 2,
+               "backgroundImages": [
+                                    "bg_black",
+                                    "bg_green",
+                                    "bg_grey"
+                                    ],
+               "spriteImages": [
+                                "annulus_orange",
+                                "annulus_red",
+                                "annulus_white",
+                                "annulus_purple",
+                                "annulus_yellow"
+                                ]
+               },
+               {
+               "stageNumber": 3,
+               "backgroundImages": [
+                                    "bg_black",
+                                    "bg_green",
+                                    "bg_grey"
+                                    ],
+               "spriteImages": [
+                                "circle_orange",
+                                "circle_red",
+                                "circle_yellow",
+                                "annulus_orange",
+                                "annulus_red",
+                                "annulus_yellow"
+                                ]
+               },
+               {
+               "stageNumber": 4,
+               "backgroundImages": [
+                                    "bg_black",
+                                    "bg_green",
+                                    "bg_grey"
+                                    ],
+               "spriteImages": [
+                                "circle_white",
+                                "circle_purple",
+                                "circle_yellow",
+                                "annulus_white",
+                                "annulus_purple",
+                                "annulus_yellow"
+                                ]
+               },
+               {
+               "stageNumber": 5,
+               "backgroundImages": [
+                                    "bg_black",
+                                    "bg_green",
+                                    "bg_grey"
+                                    ],
+               "spriteImages": [
+                                "circle_orange",
+                                "circle_red",
+                                "circle_yellow",
+                                "hexagon_orange",
+                                "hexagon_red",
+                                "hexagon_yellow"
+                                ]
+               },
+               {
+               "stageNumber": 6,
+               "backgroundImages": [
+                                    "bg_black",
+                                    "bg_green",
+                                    "bg_grey"
+                                    ],
+               "spriteImages": [
+                                "circle_white",
+                                "circle_purple",
+                                "circle_yellow",
+                                "hexagon_white",
+                                "hexagon_purple",
+                                "hexagon_yellow"
+                                ]
+               },
+               {
+               "stageNumber": 7,
+               "backgroundImages": [
+                                    "bg_blue",
+                                    "bg_orange",
+                                    "bg_red",
+                                    "bg_yellow"
+                                    ],
+               "spriteImages": [
+                                "circle_purple",
+                                "annulus_purple",
+                                "decagon_purple",
+                                "hexagon_purple"
+                                ]
+               },
+               {
+               "stageNumber": 8,
+               "backgroundImages": [
+                                    "bg_blue",
+                                    "bg_purple",
+                                    "bg_orange",
+                                    "bg_red",
+                                    "bg_yellow"
+                                    ],
+               "spriteImages": [
+                                "circle_white",
+                                "annulus_white",
+                                "decagon_white",
+                                "hexagon_white"
+                                ]
+               },
+               {
+               "stageNumber": 9,
+               "backgroundImages": [
+                                    "bg_blue",
+                                    "bg_purple",
+                                    "bg_orange"
+                                    ],
+               "spriteImages": [
+                                "circle_red",
+                                "pentagon_red",
+                                "circle_yellow",
+                                "pentagon_yellow"
+                                ]
+               },
+               {
+               "stageNumber": 10,
+               "backgroundImages": [
+                                    "bg_blue",
+                                    "bg_red",
+                                    "bg_yellow"
+                                    ],
+               "spriteImages": [
+                                "circle_orange",
+                                "pentagon_orange",
+                                "circle_purple",
+                                "pentagon_purple"
+                                ]
+               },
+               {
+               "stageNumber": 11,
+               "backgroundImages": [
+                                    "bg_blue",
+                                    "bg_purple",
+                                    "bg_orange"
+                                    ],
+               "spriteImages": [
+                                "circle_red",
+                                "decagon_red",
+                                "circle_yellow",
+                                "decagon_yellow"
+                                ]
+               },
+               {
+               "stageNumber": 12,
+               "backgroundImages": [
+                                    "bg_blue",
+                                    "bg_red",
+                                    "bg_yellow"
+                                    ],
+               "spriteImages": [
+                                "circle_orange",
+                                "decagon_orange",
+                                "circle_purple",
+                                "decagon_purple"
+                                ]
+               },
+               {
+               "stageNumber": 13,
+               "backgroundImages": [
+                                    "bg_orange_purple_01",
+                                    "bg_orange_purple_02",
+                                    "bg_yellow_orange_01",
+                                    "bg_yellow_orange_02"
+                                    ],
+               "spriteImages": [
+                                "circle_orange_purple_1",
+                                "circle_orange_purple_2",
+                                "circle_orange_purple_3",
+                                "circle_orange_purple_4"
+                                ]
+               },
+               {
+               "stageNumber": 14,
+               "backgroundImages": [
+                                    "bg_orange_purple_01",
+                                    "bg_orange_purple_02",
+                                    "bg_yellow_orange_01",
+                                    "bg_yellow_orange_02"
+                                    ],
+               "spriteImages": [
+                                "circle_yellow_red_1",
+                                "circle_yellow_red_2",
+                                "circle_yellow_red_3",
+                                "circle_yellow_red_4"
+                                ]
+               },
+               {
+               "stageNumber": 15,
+               "backgroundImages": [
+                                    "bg_orange_purple_01",
+                                    "bg_orange_purple_02",
+                                    "bg_yellow_orange_01",
+                                    "bg_yellow_orange_02"
+                                    ],
+               "spriteImages": [
+                                "annulus_orange_purple_1",
+                                "annulus_orange_purple_2",
+                                "annulus_orange_purple_3",
+                                "annulus_orange_purple_4"
+                                ]
+               },
+               {
+               "stageNumber": 16,
+               "backgroundImages": [
+                                    "bg_orange_purple_01",
+                                    "bg_orange_purple_02",
+                                    "bg_yellow_orange_01",
+                                    "bg_yellow_orange_02"
+                                    ],
+               "spriteImages": [
+                                "annulus_yellow_red_1",
+                                "annulus_yellow_red_2",
+                                "annulus_yellow_red_3",
+                                "annulus_yellow_red_4"
+                                ]
+               },
+               {
+               "stageNumber": 17,
+               "backgroundImages": [
+                                    "bg_orange_purple_01",
+                                    "bg_orange_purple_02",
+                                    "bg_yellow_orange_01",
+                                    "bg_yellow_orange_02"
+                                    ],
+               "spriteImages": [
+                                "circle_orange_purple_1",
+                                "circle_orange_purple_2",
+                                "circle_orange_purple_3",
+                                "circle_orange_purple_4"
+                                ]
+               },
+               {
+               "stageNumber": 18,
+               "backgroundImages": [
+                                    "bg_orange_purple_01",
+                                    "bg_orange_purple_02",
+                                    "bg_yellow_orange_01",
+                                    "bg_yellow_orange_02"
+                                    ],
+               "spriteImages": [
+                                "decagon_yellow_red_1",
+                                "decagon_yellow_red_2",
+                                "decagon_yellow_red_3",
+                                "decagon_yellow_red_4"
+                                ]
+               },
+               {
+               "stageNumber": 19,
+               "backgroundImages": [
+                                    "bg_orange_purple_01",
+                                    "bg_orange_purple_02",
+                                    "bg_yellow_orange_01",
+                                    "bg_yellow_orange_02"
+                                    ],
+               "spriteImages": [
+                                "decagon_orange_purple_1",
+                                "decagon_orange_purple_2",
+                                "decagon_orange_purple_3",
+                                "decagon_orange_purple_4"
+                                ]
+               },
+               {
+               "stageNumber": 20,
+               "backgroundImages": [
+                                    "bg_checkered_orange_purple"
+                                    ],
+               "spriteImages": [
+                                "circle_orange_purple_1",
+                                "circle_orange_purple_2",
+                                "circle_orange_purple_3",
+                                "circle_orange_purple_4"
+                                ]
+               },
+               {
+               "stageNumber": 21,
+               "backgroundImages": [
+                                    "bg_checkered_red_yellow"
+                                    ],
+               "spriteImages": [
+                                "circle_yellow_red_1",
+                                "circle_yellow_red_2",
+                                "circle_yellow_red_3",
+                                "circle_yellow_red_4"
+                                ]
+               },
+               {
+               "stageNumber": 22,
+               "backgroundImages": [
+                                    "bg_checkered_orange_purple"
+                                    ],
+               "spriteImages": [
+                                "annulus_orange_purple_1",
+                                "annulus_orange_purple_2",
+                                "annulus_orange_purple_3",
+                                "annulus_orange_purple_4"
+                                ]
+               },
+               {
+               "stageNumber": 23,
+               "backgroundImages": [
+                                    "bg_checkered_red_yellow"
+                                    ],
+               "spriteImages": [
+                                "annulus_yellow_red_1",
+                                "annulus_yellow_red_2",
+                                "annulus_yellow_red_3",
+                                "annulus_yellow_red_4"
+                                ]
+               },
+               {
+               "stageNumber": 24,
+               "backgroundImages": [
+                                    "bg_checkered_orange_purple"
+                                    ],
+               "spriteImages": [
+                                "circle_orange_purple_1",
+                                "circle_orange_purple_2",
+                                "circle_orange_purple_3",
+                                "circle_orange_purple_4"
+                                ]
+               },
+               {
+               "stageNumber": 25,
+               "backgroundImages": [
+                                    "bg_checkered_red_yellow"
+                                    ],
+               "spriteImages": [
+                                "decagon_yellow_red_1",
+                                "decagon_yellow_red_2",
+                                "decagon_yellow_red_3",
+                                "decagon_yellow_red_4"
+                                ]
+               },
+               {
+               "stageNumber": 26,
+               "backgroundImages": [
+                                    "bg_checkered_orange_purple"
+                                    ],
+               "spriteImages": [
+                                "decagon_orange_purple_1",
+                                "decagon_orange_purple_2",
+                                "decagon_orange_purple_3",
+                                "decagon_orange_purple_4"
+                                ]
+               },
+               {
+               "stageNumber": 27,
+               "backgroundImages": [
+                                    "bg_checkered_orange_purple"
+                                    ],
+               "spriteImages": [
+                                "circle_orange_purple_1",
+                                "circle_orange_purple_2",
+                                "circle_orange_purple_3",
+                                "circle_orange_purple_4"
+                                ]
+               },
+               {
+               "stageNumber": 28,
+               "backgroundImages": [
+                                    "bg_checkered_red_yellow"
+                                    ],
+               "spriteImages": [
+                                "circle_yellow_red_1",
+                                "circle_yellow_red_2",
+                                "circle_yellow_red_3",
+                                "circle_yellow_red_4"
+                                ]
+               },
+               {
+               "stageNumber": 29,
+               "backgroundImages": [
+                                    "bg_checkered_orange_purple"
+                                    ],
+               "spriteImages": [
+                                "annulus_orange_purple_1",
+                                "annulus_orange_purple_2",
+                                "annulus_orange_purple_3",
+                                "annulus_orange_purple_4"
+                                ]
+               },
+               {
+               "stageNumber": 30,
+               "backgroundImages": [
+                                    "bg_checkered_red_yellow"
+                                    ],
+               "spriteImages": [
+                                "annulus_yellow_red_1",
+                                "annulus_yellow_red_2",
+                                "annulus_yellow_red_3",
+                                "annulus_yellow_red_4"
+                                ]
+               },
+               {
+               "stageNumber": 31,
+               "backgroundImages": [
+                                    "bg_checkered_orange_purple"
+                                    ],
+               "spriteImages": [
+                                "circle_orange_purple_1",
+                                "circle_orange_purple_2",
+                                "circle_orange_purple_3",
+                                "circle_orange_purple_4"
+                                ]
+               },
+               {
+               "stageNumber": 32,
+               "backgroundImages": [
+                                    "bg_checkered_red_yellow"
+                                    ],
+               "spriteImages": [
+                                "decagon_yellow_red_1",
+                                "decagon_yellow_red_2",
+                                "decagon_yellow_red_3",
+                                "decagon_yellow_red_4"
+                                ]
+               },
+               {
+               "stageNumber": 33,
+               "backgroundImages": [
+                                    "bg_checkered_orange_purple"
+                                    ],
+               "spriteImages": [
+                                "decagon_orange_purple_1",
+                                "decagon_orange_purple_2",
+                                "decagon_orange_purple_3",
+                                "decagon_orange_purple_4"
+                                ]
+               }
+               ]
+}

@@ -1,0 +1,478 @@
+{
+    "themeName": "Theme_Daisies",
+    "locked": "NO",
+    "themeImage": "Theme_Daisies",
+    "hitSound": "171671__fins__success-1.wav",
+    "missSound": "",
+    "spriteBodyType": "circle",
+    "environmentalScenarios": [
+                               {
+                               "environmentScenarioName": "ZeroGravity",
+                               "gravity_dx": "1.11",
+                               "gravity_dy": "0.00",
+                               "borderBodyType": "Circle",
+                               "friction": "0",
+                               "restitution": "1",
+                               "linearDamping": "0",
+                               "affectedByGravity": "1",
+                               "dynamic": "1",
+                               "allowsRotation": "1"
+                               }
+                               ],
+    "stages": [
+               {
+               "stageNumber": 1,
+               "backgroundImages": [
+                                    "grass_bg",
+                                    "grass_bg_yellow_orange",
+                                    "bg_black"
+                                    ],
+               "spriteImages": [
+                                "flower_06_orange",
+                                "flower_06_red",
+                                "flower_06_white",
+                                "flower_06_purple",
+                                "flower_06_yellow"
+                                ]
+               },
+               {
+               "stageNumber": 2,
+               "backgroundImages": [
+                                    "grass_bg",
+                                    "grass_bg_yellow_orange",
+                                    "bg_black"
+                                    ],
+               "spriteImages": [
+                                "flower_10_orange",
+                                "flower_10_red",
+                                "flower_10_white",
+                                "flower_10_purple",
+                                "flower_10_yellow"
+                                ]
+               },
+               {
+               "stageNumber": 3,
+               "backgroundImages": [
+                                    "grass_bg",
+                                    "grass_bg_yellow_orange",
+                                    "bg_black"
+                                    ],
+               "spriteImages": [
+                                "flower_06_yellow",
+                                "flower_06_red",
+                                "flower_06_orange",
+                                "flower_08_yellow",
+                                "flower_08_red",
+                                "flower_08_orange"
+                                ]
+               },
+               {
+               "stageNumber": 4,
+               "backgroundImages": [
+                                    "grass_bg",
+                                    "grass_bg_yellow_orange",
+                                    "bg_black"
+                                    ],
+               "spriteImages": [
+                                "flower_06_yellow",
+                                "flower_06_purple",
+                                "flower_06_white",
+                                "flower_08_yellow",
+                                "flower_08_purple",
+                                "flower_08_white"
+                                ]
+               },
+               {
+               "stageNumber": 5,
+               "backgroundImages": [
+                                    "grass_bg",
+                                    "grass_bg_yellow_orange",
+                                    "bg_black"
+                                    ],
+               "spriteImages": [
+                                "flower_08_yellow",
+                                "flower_08_red",
+                                "flower_08_orange",
+                                "flower_12_yellow",
+                                "flower_12_red",
+                                "flower_12_orange"
+                                ]
+               },
+               {
+               "stageNumber": 6,
+               "backgroundImages": [
+                                    "grass_bg",
+                                    "grass_bg_yellow_orange",
+                                    "bg_black"
+                                    ],
+               "spriteImages": [
+                                "flower_08_yellow",
+                                "flower_08_purple",
+                                "flower_08_white",
+                                "flower_12_yellow",
+                                "flower_12_purple",
+                                "flower_12_white"
+                                ]
+               },
+               {
+               "stageNumber": 7,
+               "backgroundImages": [
+                                    "bg_blue",
+                                    "bg_red",
+                                    "bg_yellow",
+                                    "bg_orange"
+                                    ],
+               "spriteImages": [
+                                "flower_06_purple",
+                                "flower_08_purple",
+                                "flower_10_purple",
+                                "flower_12_purple"
+                                ]
+               },
+               {
+               "stageNumber": 8,
+               "backgroundImages": [
+                                    "bg_blue",
+                                    "bg_red",
+                                    "bg_purple",
+                                    "bg_yellow",
+                                    "bg_orange"
+                                    ],
+               "spriteImages": [
+                                "flower_06_white",
+                                "flower_08_white",
+                                "flower_10_white",
+                                "flower_12_white"
+                                ]
+               },
+               {
+               "stageNumber": 9,
+               "backgroundImages": [
+                                    "bg_blue",
+                                    "bg_purple",
+                                    "bg_orange"
+                                    ],
+               "spriteImages": [
+                                "flower_06_red",
+                                "flower_08_red",
+                                "flower_06_yellow",
+                                "flower_08_yellow"
+                                ]
+               },
+               {
+               "stageNumber": 10,
+               "backgroundImages": [
+                                    "bg_blue",
+                                    "bg_red",
+                                    "bg_yellow"
+                                    ],
+               "spriteImages": [
+                                "flower_06_orange",
+                                "flower_08_orange",
+                                "flower_06_purple",
+                                "flower_08_purple"
+                                ]
+               },
+               {
+               "stageNumber": 11,
+               "backgroundImages": [
+                                    "bg_blue",
+                                    "bg_purple",
+                                    "bg_orange"
+                                    ],
+               "spriteImages": [
+                                "flower_08_red",
+                                "flower_12_red",
+                                "flower_08_yellow",
+                                "flower_12_yellow"
+                                ]
+               },
+               {
+               "stageNumber": 12,
+               "backgroundImages": [
+                                    "bg_blue",
+                                    "bg_red",
+                                    "bg_yellow"
+                                    ],
+               "spriteImages": [
+                                "flower_08_purple",
+                                "flower_12_purple",
+                                "flower_08_orange",
+                                "flower_12_orange"
+                                ]
+               },
+               {
+               "stageNumber": 13,
+               "backgroundImages": [
+                                    "bg_orange_purple_01",
+                                    "bg_orange_purple_02",
+                                    "bg_yellow_orange_01",
+                                    "bg_yellow_orange_02"
+                                    ],
+               "spriteImages": [
+                                "flower_multi_purple_01",
+                                "flower_multi_purple_02",
+                                "flower_multi_purple_03",
+                                "flower_multi_purple_04"
+                                ]
+               },
+               {
+               "stageNumber": 14,
+               "backgroundImages": [
+                                    "bg_orange_purple_01",
+                                    "bg_orange_purple_02",
+                                    "bg_yellow_orange_01",
+                                    "bg_yellow_orange_02"
+                                    ],
+               "spriteImages": [
+                                "flower_multi_red_01",
+                                "flower_multi_red_02",
+                                "flower_multi_red_03",
+                                "flower_multi_red_04"
+                                ]
+               },
+               {
+               "stageNumber": 15,
+               "backgroundImages": [
+                                    "bg_orange_purple_01",
+                                    "bg_orange_purple_02",
+                                    "bg_yellow_orange_01",
+                                    "bg_yellow_orange_02"
+                                    ],
+               "spriteImages": [
+                                "flower_multi_purple_02",
+                                "flower_multi_purple_03",
+                                "flower_multi_purple_04",
+                                "flower_multi_purple_05"
+                                ]
+               },
+               {
+               "stageNumber": 16,
+               "backgroundImages": [
+                                    "bg_orange_purple_01",
+                                    "bg_orange_purple_02",
+                                    "bg_yellow_orange_01",
+                                    "bg_yellow_orange_02"
+                                    ],
+               "spriteImages": [
+                                "flower_multi_red_02",
+                                "flower_multi_red_03",
+                                "flower_multi_red_04",
+                                "flower_multi_red_05"
+                                ]
+               },
+               {
+               "stageNumber": 17,
+               "backgroundImages": [
+                                    "bg_orange_purple_01",
+                                    "bg_orange_purple_02",
+                                    "bg_yellow_orange_01",
+                                    "bg_yellow_orange_02"
+                                    ],
+               "spriteImages": [
+                                "flower_multi_purple_01",
+                                "flower_multi_purple_02",
+                                "flower_multi_purple_03",
+                                "flower_multi_purple_04"
+                                ]
+               },
+               {
+               "stageNumber": 18,
+               "backgroundImages": [
+                                    "bg_orange_purple_01",
+                                    "bg_orange_purple_02",
+                                    "bg_yellow_orange_01",
+                                    "bg_yellow_orange_02"
+                                    ],
+               "spriteImages": [
+                                "flower_multi_red_02",
+                                "flower_multi_red_03",
+                                "flower_multi_red_04",
+                                "flower_multi_red_05"
+                                ]
+               },
+               {
+               "stageNumber": 19,
+               "backgroundImages": [
+                                    "bg_orange_purple_01",
+                                    "bg_orange_purple_02",
+                                    "bg_yellow_orange_01",
+                                    "bg_yellow_orange_02"
+                                    ],
+               "spriteImages": [
+                                "flower_multi_purple_02",
+                                "flower_multi_purple_03",
+                                "flower_multi_purple_04",
+                                "flower_multi_purple_05"
+                                ]
+               },
+               {
+               "stageNumber": 20,
+               "backgroundImages": [
+                                    "bg_checkered_orange_purple"
+                                    ],
+               "spriteImages": [
+                                "flower_multi_purple_01",
+                                "flower_multi_purple_02",
+                                "flower_multi_purple_03",
+                                "flower_multi_purple_04"
+                                ]
+               },
+               {
+               "stageNumber": 21,
+               "backgroundImages": [
+                                    "bg_checkered_red_yellow"
+                                    ],
+               "spriteImages": [
+                                "flower_multi_red_01",
+                                "flower_multi_red_02",
+                                "flower_multi_red_03",
+                                "flower_multi_red_04"
+                                ]
+               },
+               {
+               "stageNumber": 22,
+               "backgroundImages": [
+                                    "bg_checkered_orange_purple"
+                                    ],
+               "spriteImages": [
+                                "flower_multi_purple_02",
+                                "flower_multi_purple_03",
+                                "flower_multi_purple_04",
+                                "flower_multi_purple_05"
+                                ]
+               },
+               {
+               "stageNumber": 23,
+               "backgroundImages": [
+                                    "bg_checkered_red_yellow"
+                                    ],
+               "spriteImages": [
+                                "flower_multi_red_02",
+                                "flower_multi_red_03",
+                                "flower_multi_red_04",
+                                "flower_multi_red_05"
+                                ]
+               },
+               {
+               "stageNumber": 24,
+               "backgroundImages": [
+                                    "bg_checkered_orange_purple"
+                                    ],
+               "spriteImages": [
+                                "flower_multi_purple_01",
+                                "flower_multi_purple_02",
+                                "flower_multi_purple_03",
+                                "flower_multi_purple_04"
+                                ]
+               },
+               {
+               "stageNumber": 25,
+               "backgroundImages": [
+                                    "bg_checkered_red_yellow"
+                                    ],
+               "spriteImages": [
+                                "flower_multi_red_02",
+                                "flower_multi_red_03",
+                                "flower_multi_red_04",
+                                "flower_multi_red_05"
+                                ]
+               },
+               {
+               "stageNumber": 26,
+               "backgroundImages": [
+                                    "bg_checkered_orange_purple"
+                                    ],
+               "spriteImages": [
+                                "flower_multi_purple_02",
+                                "flower_multi_purple_03",
+                                "flower_multi_purple_04",
+                                "flower_multi_purple_05"
+                                ]
+               },
+               {
+               "stageNumber": 27,
+               "backgroundImages": [
+                                    "bg_checkered_orange_purple"
+                                    ],
+               "spriteImages": [
+                                "flower_multi_purple_01",
+                                "flower_multi_purple_02",
+                                "flower_multi_purple_03",
+                                "flower_multi_purple_04"
+                                ]
+               },
+               {
+               "stageNumber": 28,
+               "backgroundImages": [
+                                    "bg_checkered_red_yellow"
+                                    ],
+               "spriteImages": [
+                                "flower_multi_red_01",
+                                "flower_multi_red_02",
+                                "flower_multi_red_03",
+                                "flower_multi_red_04"
+                                ]
+               },
+               {
+               "stageNumber": 29,
+               "backgroundImages": [
+                                    "bg_checkered_orange_purple"
+                                    ],
+               "spriteImages": [
+                                "flower_multi_purple_02",
+                                "flower_multi_purple_03",
+                                "flower_multi_purple_04",
+                                "flower_multi_purple_05"
+                                ]
+               },
+               {
+               "stageNumber": 30,
+               "backgroundImages": [
+                                    "bg_checkered_red_yellow"
+                                    ],
+               "spriteImages": [
+                                "flower_multi_red_02",
+                                "flower_multi_red_03",
+                                "flower_multi_red_04",
+                                "flower_multi_red_05"
+                                ]
+               },
+               {
+               "stageNumber": 31,
+               "backgroundImages": [
+                                    "bg_checkered_orange_purple"
+                                    ],
+               "spriteImages": [
+                                "flower_multi_purple_01",
+                                "flower_multi_purple_02",
+                                "flower_multi_purple_03",
+                                "flower_multi_purple_04"
+                                ]
+               },
+               {
+               "stageNumber": 32,
+               "backgroundImages": [
+                                    "bg_checkered_red_yellow"
+                                    ],
+               "spriteImages": [
+                                "flower_multi_red_02",
+                                "flower_multi_red_03",
+                                "flower_multi_red_04",
+                                "flower_multi_red_05"
+                                ]
+               },
+               {
+               "stageNumber": 33,
+               "backgroundImages": [
+                                    "bg_checkered_orange_purple"
+                                    ],
+               "spriteImages": [
+                                "flower_multi_purple_02",
+                                "flower_multi_purple_03",
+                                "flower_multi_purple_04",
+                                "flower_multi_purple_05"
+                                ]
+               }
+               ]
+}
