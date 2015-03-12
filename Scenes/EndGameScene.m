@@ -11,6 +11,9 @@
 @implementation EndGameScene
 
 - (id)initWithSize:(CGSize)size {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     if (self = [super initWithSize:size]) {
         
     }
@@ -18,8 +21,10 @@
     return self;
 }
 
--(void)didMoveToView:(SKView *)view
-{
+-(void)didMoveToView:(SKView *)view {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     self.imageType = [self.userData valueForKey:@"imageType"];
     self.backgroundFileName = [self.userData objectForKey:@"backgroundFileName"];
     self.theme = [self.userData valueForKey:@"theme"];
@@ -41,8 +46,10 @@
     [self createSceneContents];
 }
 
-- (void)createSceneContents
-{
+- (void)createSceneContents {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     // Game Over Message Line 1
     
     SKLabelNode *gameOverMessageLabel1;
@@ -95,8 +102,10 @@
     [self addChild:self.changeThemeButton];
 }
 
-- (void)determineOutcome
-{
+- (void)determineOutcome {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     if (self.hits >= SCORE_HITS_REQUIRED) {
         
         self.win = YES;
@@ -117,8 +126,10 @@
     }
 }
 
-- (void)getMessageForOutcome:(NSString *)gameOutcome
-{
+- (void)getMessageForOutcome:(NSString *)gameOutcome {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     // Message on Line 1
     NSMutableArray *line1Message = [NSMutableArray array];
     
@@ -167,13 +178,18 @@
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     UITouch *touch = [touches anyObject];
     CGPoint positionInScene = [touch locationInNode:self];
     [self selectNodeForTouch:positionInScene];
 }
 
-- (void)selectNodeForTouch:(CGPoint)touchLocation
-{
+- (void)selectNodeForTouch:(CGPoint)touchLocation {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     SKSpriteNode *touchedNode = (SKSpriteNode *)[self nodeAtPoint:touchLocation];
     
     //NSLog(@"Touched Node Name: %@", touchedNode.name);
@@ -186,8 +202,10 @@
 }
 
 
-- (void)createBackgroundWithImageName:(NSString *)imageName forScreenType:(NSString *)screenType
-{
+- (void)createBackgroundWithImageName:(NSString *)imageName forScreenType:(NSString *)screenType {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     // Get correct image for the screen resolution
     NSString *backgroundImage = [Game getBackgroundImage:imageName forScreenType:screenType];
     
@@ -203,8 +221,10 @@
     [self addChild:self.background];
 }
 
-- (void)changeScene
-{
+- (void)changeScene {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     [self removeAllActions];
     
     [self enumerateChildNodesWithName:@"changeTheme" usingBlock:^(SKNode *node, BOOL *stop) {

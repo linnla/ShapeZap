@@ -11,6 +11,9 @@
 @implementation GameScene
 
 - (id)initWithSize:(CGSize)size {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     if (self = [super initWithSize:size]) {
         
     }
@@ -18,13 +21,17 @@
     return self;
 }
 
--(void)didMoveToView:(SKView *)view
-{
+-(void)didMoveToView:(SKView *)view {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     self.imageType = [self.userData valueForKey:@"imageType"];
     self.backgroundFileName = [self.userData objectForKey:@"backgroundFileName"];
     self.theme = [self.userData valueForKey:@"theme"];
     self.missSound = [self.userData valueForKey:@"missSound"];
     self.hitSound = [self.userData valueForKey:@"hitSound"];
+    
+    //This was commented out LAL
     //self.sprites = [self.userData objectForKey:@"sprites"];
     self.spriteImageNames = [self.userData objectForKey:@"spriteImageNames"];
     self.scoringSprite = [self.userData valueForKey:@"scoringSprite"];
@@ -93,8 +100,10 @@
     //[self vibrate];
 }
 
-- (void)setPhysics
-{
+- (void)setPhysics {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     NSArray *gravityArray = @[@"0", @"1", @"-1"];
     NSString *gravityString_dy = gravityArray[arc4random_uniform([gravityArray count])];
     
@@ -110,8 +119,10 @@
                                                                               CGRectGetMaxY(self.frame) + 200)];
 }
 
-- (void)startTimer
-{
+- (void)startTimer {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     if (self.timerTextures.count > 0) {
         
         self.progressTimer = [SKSpriteNode spriteNodeWithTexture:self.timer20];
@@ -126,22 +137,23 @@
         SKAction *animate = [SKAction animateWithTextures:self.timerTextures timePerFrame:1.0];
         [self.progressTimer runAction: animate];
         
-        //NSLog(@"Timer Started");
-        
     } else {
         
         NSLog(@"ERROR - self.timeTexture.count = 0");
     }
 }
 
-- (void)endGame
-{
-    //NSLog(@"endGame : %d", self.gameOver);
+- (void)endGame {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     [self changeScene];
 }
 
-- (void)changeScene
-{
+- (void)changeScene {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     SKView *spriteView = (SKView *) self.view;
     SKScene *scene = [[EndGameScene alloc] initWithSize:self.size];
     
@@ -195,13 +207,18 @@
 
 }
 
-- (void)createBackgroundWithImageName:(NSString *)imageName forScreenType:(NSString *)screenType
-{
+- (void)createBackgroundWithImageName:(NSString *)imageName forScreenType:(NSString *)screenType {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     // Get correct image for the screen resolution
     NSString *backgroundImage = [Game getBackgroundImage:imageName forScreenType:screenType];
     
     // Create sprite
+    // Both of these methods worked to create backgrounds
+    //self.background = [SKSpriteNode spriteNodeWithTexture:[SKTexture textureWithImageNamed:[backgroundImage stringByAppendingString:@".png"]]];
     self.background = [SKSpriteNode spriteNodeWithImageNamed:[backgroundImage stringByAppendingString:@".png"]];
+   
     self.background.name = @"background";
     
     // Set sprite position
@@ -212,8 +229,10 @@
     [self addChild:self.background];
 }
 
-- (void)update:(NSTimeInterval)currentTime
-{
+- (void)update:(NSTimeInterval)currentTime {
+    
+    NSLog(@"%@ %@", @"GameScene", NSStringFromSelector(_cmd));
+    
     // Handle time delta (Apple code)
     // If we drop below 60fps, we still want everything to move the same distance.
     
@@ -237,6 +256,8 @@
 
 - (void)updateWithTimeSinceLastUpdate:(CFTimeInterval)timeSinceLast {
     
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     self.lastSpawnTimeInterval += timeSinceLast;
     
     if (self.lastSpawnTimeInterval > self.spriteSeconds) {
@@ -253,15 +274,19 @@
     
 }
 
-- (void)touchesBegan:(NSSet *) touches withEvent:(UIEvent *)event
-{
+- (void)touchesBegan:(NSSet *) touches withEvent:(UIEvent *)event {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     UITouch *touch = [touches anyObject];
     CGPoint positionInScene = [touch locationInNode:self];
     [self selectNodeForTouch:positionInScene];
 }
 
-- (void)selectNodeForTouch:(CGPoint)touchLocation
-{
+- (void)selectNodeForTouch:(CGPoint)touchLocation {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     SKSpriteNode *touchedNode = (SKSpriteNode *)[self nodeAtPoint:touchLocation];
     
     //NSLog(@"Touched node is: %@", touchedNode.name);
@@ -303,8 +328,10 @@
     }
 }
 
-- (void)hit
-{
+- (void)hit {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     self.hits += 1;
     
     if (self.hits >= SCORE_HITS_REQUIRED) {
@@ -344,8 +371,10 @@
     }
 }
 
-- (void)miss
-{
+- (void)miss {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     self.misses += 1;
     
     if (self.misses >= SCORE_MISSES_ALLOWED) {
@@ -393,11 +422,18 @@
  */
 
 - (void)vibrate {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     AudioServicesPlaySystemSound (kSystemSoundID_Vibrate);
 }
 
-- (void)createRandomGameSprite
-{
+// LAL Issue is here
+
+- (void)createRandomGameSprite {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     // Make sure spriteImageNames array has imageNames
     
     if ((self.spriteImageNames.count == 0) || self.spriteImageNames == nil) {
@@ -424,7 +460,9 @@
         imageAdjustment = 1.0;
     }
 
-    SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:randomSpriteImage];
+    // Neither approach made any difference...still can't see sprites
+    SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithTexture:[SKTexture textureWithImageNamed:randomSpriteImage]];
+    //SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:randomSpriteImage];
     sprite.name = spriteName;
     
     if ([spriteName isEqualToString:@"scoringSprite"]) {
@@ -555,8 +593,10 @@
     }
 }
 
-- (void)createHitLabels
-{
+- (void)createHitLabels {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     SKSpriteNode *hitLabel = [SKSpriteNode spriteNodeWithImageNamed:@"HitLabel@2x"];
     
     hitLabel.name = @"hitLabel";
@@ -572,8 +612,10 @@
     [self addChild:hitLabel];
 }
 
-- (void)createHitScore
-{
+- (void)createHitScore {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     // Create sprite
     
     self.hitScore = [SKSpriteNode spriteNodeWithImageNamed:@"0@2x"];
@@ -592,8 +634,10 @@
     [self addChild:self.hitScore];
 }
 
-- (void)createMissLabels
-{
+- (void)createMissLabels {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     // Create the label sprite
     
     SKSpriteNode *missLabel = [SKSpriteNode spriteNodeWithImageNamed:@"MissLabel@2x"];
@@ -613,8 +657,10 @@
     [self addChild:missLabel];
 }
 
-- (void)createMissScore
-{
+- (void)createMissScore {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     // Create the label sprite
     
     self.missScore = [SKSpriteNode spriteNodeWithTexture:[SKTexture textureWithImageNamed:@"miss0@2x"]];
@@ -638,8 +684,10 @@
     [self addChild:self.missScore];
 }
 
-- (void)createTimerTextures
-{
+- (void)createTimerTextures {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     self.timerTextureAtlas = [SKTextureAtlas atlasNamed:@"timer"];
     
     self.timer20 = [self.timerTextureAtlas textureNamed:@"time_20@2x"];
@@ -667,8 +715,10 @@
     self.timerTextures = @[self.timer20, self.timer19, self.timer18, self.timer17, self.timer16, self.timer15, self.timer14, self.timer13, self.timer12, self.timer11, self.timer10, self.timer9, self.timer8, self.timer7, self.timer6, self.timer5, self.timer4, self.timer3, self.timer2, self.timer1, self.timer0];
 }
           
-- (void)didSimulatePhysics
-{
+- (void)didSimulatePhysics {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     if (self.physicsWorld.gravity.dy == 0) {
         
         return;
@@ -695,8 +745,10 @@
     }
 }
 
-- (void)preloadExplosionTextures
-{
+- (void)preloadExplosionTextures {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     self.explosion = [SKTexture textureWithImageNamed:@"explode"];
     self.firstExplosionTexture = @[self.explosion];
     
@@ -735,8 +787,10 @@
      }];*/
 }
 
-- (void)preloadExplosionAction
-{
+- (void)preloadExplosionAction {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     SKAction *hitSound = [SKAction playSoundFileNamed:self.hitSound waitForCompletion:NO];
     //SKAction *animate = [SKAction animateWithTextures:self.explosionTextures timePerFrame:.25/[self.explosionTextures count]];
     SKAction *fadeAway = [SKAction fadeOutWithDuration:0.25];
@@ -748,8 +802,10 @@
     //NSLog(@"Explosion action loaded");
 }
 
-- (void)preLoadMissTexture
-{
+- (void)preLoadMissTexture {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     self.x = [SKTexture textureWithImageNamed:@"miss"];
     self.missTexture = @[self.x];
     
@@ -764,8 +820,10 @@
     
 }
 
-- (void)preloadMissAction
-{
+- (void)preloadMissAction {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     SKAction *missSound = [SKAction playSoundFileNamed:self.missSound waitForCompletion:NO];
     SKAction *zoom = [SKAction scaleTo:1.0 duration:0.25];
     SKAction *fadeAway = [SKAction fadeOutWithDuration:0.25];

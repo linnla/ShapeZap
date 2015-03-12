@@ -11,6 +11,9 @@
 @implementation MyScene
 
 - (id)initWithSize:(CGSize)size {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     if (self = [super initWithSize:size]) {
         
         [self createBackground];
@@ -18,8 +21,10 @@
     return self;
 }
 
-- (void)createBackground
-{
+- (void)createBackground {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     // Get the imageType (@2x, -586h@2x)
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -47,6 +52,9 @@
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     /* Called when a touch begins */
     
     for (UITouch *touch in touches) {
@@ -65,14 +73,19 @@
 }
 
 -(void)update:(CFTimeInterval)currentTime {
+    
+    NSLog(@"%@ %@", @"MyScene", NSStringFromSelector(_cmd));
+    
     /* Called before each frame is rendered */
     
     [self createHighResRandomGameSprite];
     //[self createLowResRandomGameSprite];
 }
 
-- (void) createHighResRandomGameSprite
-{
+- (void) createHighResRandomGameSprite {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     // Create the texture
     
     NSString *spriteImage = @"annulus_orange@2x.png";
@@ -103,8 +116,10 @@
     [self addChild:sprite];
 }
 
-- (void) createLowResRandomGameSprite
-{
+- (void) createLowResRandomGameSprite {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     // Create the texture
     
     NSString *spriteImage = @"annulus_orange.png";

@@ -10,7 +10,12 @@
 
 @implementation StartGameScene
 
+//@synthesize sprite1, sprite2, sprite3, sprite4, sprite5, sprite6, sprite7, sprite8, spriteImageNames;
+
 - (id)initWithSize:(CGSize)size {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     if (self = [super initWithSize:size]) {
         
     }
@@ -18,15 +23,17 @@
     return self;
 }
 
--(void)didMoveToView:(SKView *)view
-{
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+-(void)didMoveToView:(SKView *)view {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
+    //dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         [self preloadFonts];
-    });
+    //});
           
-    self.imageType = [self.userData valueForKey:@"imageType"];
-    self.backgroundFileName = [self.userData objectForKey:@"backgroundFileName"];
-    self.theme = [self.userData valueForKey:@"theme"];
+    _imageType = [self.userData valueForKey:@"imageType"];
+    _backgroundFileName = [self.userData objectForKey:@"backgroundFileName"];
+    _theme = [self.userData valueForKey:@"theme"];
     self.stage = [[self.userData valueForKey:@"stage"] integerValue];
     
     //NSLog(@"ImageType is : %@",self.imageType);
@@ -42,8 +49,10 @@
     [self createGameSprites];
 }
 
-- (void)createBackgroundWithImageName:(NSString *)imageName forScreenType:(NSString *)screenType
-{
+- (void)createBackgroundWithImageName:(NSString *)imageName forScreenType:(NSString *)screenType {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     // Get correct image for the screen resolution
     NSString *backgroundImage = [Game getBackgroundImage:imageName forScreenType:screenType];
     
@@ -69,8 +78,10 @@
     }
 }
 
-- (void)createGameLogo
-{
+- (void)createGameLogo {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     if ([Game fileExistsInBundle:GAMELOGO ofType:@"png"]) {
         
         self.gameLogo = [SKSpriteNode spriteNodeWithImageNamed:GAMELOGO];
@@ -97,8 +108,10 @@
     }
 }
 
-- (void) createPlayLabel
-{
+- (void) createPlayLabel {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     self.playLabel = [SKSpriteNode spriteNodeWithImageNamed:@"play@2x.png"];
     
     self.playLabel.xScale = .75;
@@ -121,8 +134,10 @@
     }
 }
 
-- (void)touchesBegan:(NSSet *) touches withEvent:(UIEvent *)event
-{
+- (void)touchesBegan:(NSSet *) touches withEvent:(UIEvent *)event {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     UITouch *touch = [touches anyObject];
     CGPoint positionInScene = [touch locationInNode:self];
     [self selectNodeForTouch:positionInScene];
@@ -137,8 +152,10 @@
     [self changeScene];
 }
 
-- (void)changeScene
-{
+- (void)changeScene {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     SKView *spriteView = (SKView *) self.view;
     SKScene *scene = [[GameScene alloc] initWithSize:self.size];
     
@@ -186,8 +203,10 @@
     [spriteView presentScene:scene transition:fade];
 }
 
-- (void)loadTheme:(NSString *)theme
-{
+- (void)loadTheme:(NSString *)theme {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     NSError *error;
     
     // File path to theme json in bundle
@@ -249,7 +268,7 @@
                         
                         else self.backgroundFileName = self.backgroundImages[arc4random_uniform([self.backgroundImages count])];
                         
-                        //self.sprites = [NSMutableArray array];
+                        self.sprites = [NSMutableArray array];
                         self.spriteImageNames = [NSMutableArray array];
                 
                         self.spriteImageNames = [mutableDictionary objectForKey:@"spriteImages"];
@@ -354,8 +373,10 @@
     }
 }
 
-- (void)loadStage:(NSUInteger)stage
-{
+- (void)loadStage:(NSUInteger)stage {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     NSError *error;
     
     // File path to theme json in bundle
@@ -460,8 +481,10 @@
     }
 }
 
-- (void)createGameSprites
-{
+- (void)createGameSprites {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     float topOffset = 125;
     float rowHeight = 80;
     float columnOffset = 60;
@@ -551,8 +574,10 @@
     if (scoringSpriteIndex == 7 && self.sprite8) [self.sprite8 runAction:pulseForever];
 }
 
-- (void)preloadFonts
-{
+- (void)preloadFonts {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     //NSLog(@"StartGameScene preloadFonts - Start");
     
     SKLabelNode *preload = [SKLabelNode labelNodeWithFontNamed:SKLABEL_GAME_FONT];

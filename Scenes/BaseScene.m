@@ -10,8 +10,10 @@
 
 @implementation BaseScene
 
-- (void)createBackgroundWithImageName:(NSString *)imageName forScreenType:(NSString *)screenType
-{
+- (void)createBackgroundWithImageName:(NSString *)imageName forScreenType:(NSString *)screenType {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     // Get correct image for the screen resolution
     
     NSString *backgroundImage = [Game getBackgroundImage:imageName forScreenType:screenType];
@@ -33,9 +35,9 @@
     NSLog(@"Background created: %@", backgroundImage);
 }
 
-- (void)createGameLogo
-{
-    NSLog(@"createGameLogo");
+- (void)createGameLogo {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
     
     if ([Game fileExistsInBundle:GAMELOGO ofType:@"png"]) {
         

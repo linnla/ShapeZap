@@ -17,15 +17,15 @@
 
 // UserData Passed Between Scenes
 
-@property (nonatomic) NSString *imageType;
-@property (nonatomic) NSString *theme;
+@property (nonatomic, strong) NSString *imageType;
+@property (nonatomic, strong) NSString *theme;
 @property NSUInteger stage;
 
 // From Theme
 
-@property (nonatomic) NSString *backgroundFileName;
-@property (nonatomic) NSString *hitSound;
-@property (nonatomic) NSString *missSound;
+@property (nonatomic, strong) NSString *backgroundFileName;
+@property (nonatomic, strong) NSString *hitSound;
+@property (nonatomic, strong) NSString *missSound;
 
 // From stage JSON
 
@@ -41,12 +41,12 @@
 
 // Arrays
 
-@property (nonatomic) NSMutableArray *spriteImageNames;
-@property (nonatomic) NSMutableArray *sprites;
+@property (nonatomic, strong) NSMutableArray *spriteImageNames;
+@property (nonatomic, strong) NSMutableArray *sprites;
 
 // Other
 
-@property (nonatomic) NSString *scoringSprite;
+@property (nonatomic, strong) NSString *scoringSprite;
 
 // Time
 
@@ -61,31 +61,31 @@
 
 // Timer textures
 
-@property (nonatomic) SKTextureAtlas *timerTextureAtlas;
-@property (nonatomic) SKSpriteNode *progressTimer;
-@property (nonatomic) NSArray *timerTextures;
+@property (nonatomic, strong) SKTextureAtlas *timerTextureAtlas;
+@property (nonatomic, strong) SKSpriteNode *progressTimer;
+@property (nonatomic, strong) NSArray *timerTextures;
 
-@property (nonatomic) SKTexture *timer0;
-@property (nonatomic) SKTexture *timer1;
-@property (nonatomic) SKTexture *timer2;
-@property (nonatomic) SKTexture *timer3;
-@property (nonatomic) SKTexture *timer4;
-@property (nonatomic) SKTexture *timer5;
-@property (nonatomic) SKTexture *timer6;
-@property (nonatomic) SKTexture *timer7;
-@property (nonatomic) SKTexture *timer8;
-@property (nonatomic) SKTexture *timer9;
-@property (nonatomic) SKTexture *timer10;
-@property (nonatomic) SKTexture *timer11;
-@property (nonatomic) SKTexture *timer12;
-@property (nonatomic) SKTexture *timer13;
-@property (nonatomic) SKTexture *timer14;
-@property (nonatomic) SKTexture *timer15;
-@property (nonatomic) SKTexture *timer16;
-@property (nonatomic) SKTexture *timer17;
-@property (nonatomic) SKTexture *timer18;
-@property (nonatomic) SKTexture *timer19;
-@property (nonatomic) SKTexture *timer20;
+@property (nonatomic, strong) SKTexture *timer0;
+@property (nonatomic, strong) SKTexture *timer1;
+@property (nonatomic, strong) SKTexture *timer2;
+@property (nonatomic, strong) SKTexture *timer3;
+@property (nonatomic, strong) SKTexture *timer4;
+@property (nonatomic, strong) SKTexture *timer5;
+@property (nonatomic, strong) SKTexture *timer6;
+@property (nonatomic, strong) SKTexture *timer7;
+@property (nonatomic, strong) SKTexture *timer8;
+@property (nonatomic, strong) SKTexture *timer9;
+@property (nonatomic, strong) SKTexture *timer10;
+@property (nonatomic, strong) SKTexture *timer11;
+@property (nonatomic, strong) SKTexture *timer12;
+@property (nonatomic, strong) SKTexture *timer13;
+@property (nonatomic, strong) SKTexture *timer14;
+@property (nonatomic, strong) SKTexture *timer15;
+@property (nonatomic, strong) SKTexture *timer16;
+@property (nonatomic, strong) SKTexture *timer17;
+@property (nonatomic, strong) SKTexture *timer18;
+@property (nonatomic, strong) SKTexture *timer19;
+@property (nonatomic, strong) SKTexture *timer20;
 
 // Scoring
 

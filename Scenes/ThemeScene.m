@@ -11,6 +11,9 @@
 @implementation ThemeScene
 
 - (id)initWithSize:(CGSize)size {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     if (self = [super initWithSize:size]) {
         
     }
@@ -18,8 +21,10 @@
     return self;
 }
 
--(void)didMoveToView:(SKView *)view
-{
+-(void)didMoveToView:(SKView *)view {
+ 
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     self.imageType = [self.userData valueForKey:@"imageType"];
     self.backgroundFileName = [self.userData objectForKey:@"backgroundFileName"];
     
@@ -33,8 +38,10 @@
     }
 }
 
-- (void)createBackgroundWithImageName:(NSString *)imageName forScreenType:(NSString *)screenType
-{
+- (void)createBackgroundWithImageName:(NSString *)imageName forScreenType:(NSString *)screenType {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     // Get correct image for the screen resolution
     NSString *backgroundImage = [Game getBackgroundImage:imageName forScreenType:screenType];
     
@@ -50,8 +57,10 @@
     [self addChild:self.background];
 }
 
-- (void)createGameLogo
-{
+- (void)createGameLogo {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     if ([Game fileExistsInBundle:GAMELOGO ofType:@"png"]) {
         
         self.gameLogo = [SKSpriteNode spriteNodeWithImageNamed:GAMELOGO];
@@ -67,8 +76,10 @@
     }
 }
 
-- (void)createThemeIcons
-{
+- (void)createThemeIcons {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     // Images are scaled down (xScale, yScale) so take that into account
     float imageWidth = 200 * .5;
     float imageHeight = 200 * .5;
@@ -123,15 +134,19 @@
     }
 }
 
-- (void)touchesBegan:(NSSet *) touches withEvent:(UIEvent *)event
-{
+- (void)touchesBegan:(NSSet *) touches withEvent:(UIEvent *)event {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     UITouch *touch = [touches anyObject];
     CGPoint positionInScene = [touch locationInNode:self];
     [self selectNodeForTouch:positionInScene];
 }
 
-- (void)selectNodeForTouch:(CGPoint)touchLocation
-{
+- (void)selectNodeForTouch:(CGPoint)touchLocation {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     self.touchedNode = (SKSpriteNode *)[self nodeAtPoint:touchLocation];
     
     //NSLog(@"Touched Node name: %@", self.touchedNode.name);
@@ -147,8 +162,10 @@
     }
 }
 
-- (void)changeScene
-{
+- (void)changeScene {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     SKView *spriteView = (SKView *) self.view;
     SKScene *scene = [[StartGameScene alloc] initWithSize:self.size];
     
@@ -163,8 +180,10 @@
     [spriteView presentScene:scene transition:fade];
 }
 
-- (NSArray *)getThemes
-{
+- (NSArray *)getThemes {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     NSArray *themeFilesFound = [self getFileNamesFromBundleMatchingExtension:@".json" withPrefix:@"Theme_"];
     
     NSError *error;
@@ -206,10 +225,15 @@
 
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
+    
+    NSLog(@"%@ %@", @"GameScene", NSStringFromSelector(_cmd));
+    
 }
 
-- (NSArray *) getFileNamesFromBundleMatchingExtension:(NSString *)extension withPrefix:(NSString *)prefix
-{
+- (NSArray *) getFileNamesFromBundleMatchingExtension:(NSString *)extension withPrefix:(NSString *)prefix {
+    
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    
     // Initialize arrays
     
     NSMutableArray *filesMatchingExtension = [[NSMutableArray alloc] init];

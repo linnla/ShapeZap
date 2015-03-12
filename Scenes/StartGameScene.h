@@ -16,11 +16,11 @@
 
 // UserData Passed Between Scenes
 
-@property (nonatomic) NSString *imageType;
-@property (nonatomic) NSString *backgroundFileName;
-@property (nonatomic) NSString *theme;
-@property (nonatomic) NSString *hitSound;
-@property (nonatomic) NSString *missSound;
+@property (nonatomic, strong) NSString *imageType;
+@property (nonatomic, strong) NSString *backgroundFileName;
+@property (nonatomic, strong) NSString *theme;
+@property (nonatomic, strong) NSString *hitSound;
+@property (nonatomic, strong) NSString *missSound;
 @property NSUInteger stage;
 
 // From stage JSON
@@ -33,32 +33,35 @@
 
 // Sprites
 
-@property (nonatomic, weak) SKSpriteNode *touchedNode;
-@property (nonatomic, weak) SKSpriteNode *randomBackground;
-@property (nonatomic, weak) SKSpriteNode *background;
-@property (nonatomic, weak) SKSpriteNode *gameLogo;
-@property (nonatomic, weak) SKSpriteNode *playLabel;
+// Changed from weak to strong
+@property (nonatomic, strong) SKSpriteNode *touchedNode;
+@property (nonatomic, strong) SKSpriteNode *randomBackground;
+@property (nonatomic, strong) SKSpriteNode *background;
+@property (nonatomic, strong) SKSpriteNode *gameLogo;
+@property (nonatomic, strong) SKSpriteNode *playLabel;
 
-@property (nonatomic, weak) SKSpriteNode *sprite1;
-@property (nonatomic, weak) SKSpriteNode *sprite2;
-@property (nonatomic, weak) SKSpriteNode *sprite3;
-@property (nonatomic, weak) SKSpriteNode *sprite4;
-@property (nonatomic, weak) SKSpriteNode *sprite5;
-@property (nonatomic, weak) SKSpriteNode *sprite6;
-@property (nonatomic, weak) SKSpriteNode *sprite7;
-@property (nonatomic, weak) SKSpriteNode *sprite8;
+@property (nonatomic, strong) SKSpriteNode *sprite1;
+@property (nonatomic, strong) SKSpriteNode *sprite2;
+@property (nonatomic, strong) SKSpriteNode *sprite3;
+@property (nonatomic, strong) SKSpriteNode *sprite4;
+@property (nonatomic, strong) SKSpriteNode *sprite5;
+@property (nonatomic, strong) SKSpriteNode *sprite6;
+@property (nonatomic, strong) SKSpriteNode *sprite7;
+@property (nonatomic, strong) SKSpriteNode *sprite8;
 
 // Arrays
 
-@property (nonatomic, weak) NSMutableArray *stages;
-@property (nonatomic, weak) NSMutableArray *backgroundImages;
+// Changed from weak to strong
+@property (nonatomic, strong) NSMutableArray *stages;
+@property (nonatomic, strong) NSMutableArray *backgroundImages;
 
 @property (nonatomic) NSMutableArray *spriteImageNames;
-@property (nonatomic, weak) NSMutableArray *sprites;
+@property (nonatomic, strong) NSMutableArray *sprites;
 
 // Other
 
-@property (nonatomic, weak) NSString *scoringSprite;
+// Changed from weak to strong
+@property (nonatomic, strong) NSString *scoringSprite;
 @property NSUInteger stageNumber;
 
 @end
